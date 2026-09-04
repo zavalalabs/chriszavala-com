@@ -12,6 +12,21 @@ import { SITE_TITLE, SITE_DESCRIPTION, LINKS } from '../consts';
 	<body>
 		<main class="linktree">
 			<h1>{SITE_TITLE}</h1>
+			<p class="tagline">Practical experience. <em>Direct</em> advice.</p>
+			<p>
+				I'm Chris Zavala — an IT professional based in Colorado with over a decade of hands-on
+				experience across infrastructure, workplace technology, and organizational IT strategy.
+				I've worked inside organizations ranging from lean 10-person SMBs to enterprise
+				environments with 1,200+ employees, which means I understand both the budget constraints
+				and the political realities.
+			</p>
+			<p>
+				My background is practical, not theoretical. I've built and maintained the infrastructure,
+				argued for the tooling budget, and managed the conversation with leadership when the
+				technology isn't working the way anyone promised it would. Read more on the <a
+					href="https://zavalatechconsulting.com/#about">consulting site</a
+				>.
+			</p>
 			<ul>
 				{
 					LINKS.map((link) => (
@@ -25,17 +40,24 @@ import { SITE_TITLE, SITE_DESCRIPTION, LINKS } from '../consts';
 		<Footer />
 		<style>
 			.linktree {
-				max-width: 480px;
+				max-width: 560px;
 				margin: 10vh auto 0;
 				padding: 1em;
 				text-align: center;
 			}
 			.linktree h1 {
+				margin-bottom: 0.25em;
+			}
+			.linktree .tagline {
+				color: rgb(var(--gray));
 				margin-bottom: 1.5em;
+			}
+			.linktree p {
+				text-align: left;
 			}
 			.linktree ul {
 				list-style: none;
-				margin: 0;
+				margin: 1.5em 0 0;
 				padding: 0;
 				display: flex;
 				flex-direction: column;

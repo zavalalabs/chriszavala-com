@@ -5,4 +5,7 @@ export const SITE_TITLE = "Chris Zavala";
 export const SITE_DESCRIPTION = "Chris Zavala's links.";
 
 // Link-tree entries shown on the homepage. Add more here as new destinations come online.
-export const LINKS = [{ label: "Blog", href: "https://blog.chriszavala.com" }];
+export const LINKS = [
+	{ label: "Blog", href: "https://blog.chriszavala.com" },
+	{ label: "Consulting", href: "https://zavalatechconsulting.com/" },
+];
