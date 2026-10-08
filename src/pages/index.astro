@@ -26,11 +26,17 @@ import { SITE_TITLE, SITE_DESCRIPTION, LINKS } from '../consts';
 					></iframe>
 				</div>
 				<figcaption>
-					<strong>Portraits of NSF NCAR</strong> — a series highlighting the people behind the
-					science at the National Center for Atmospheric Research, sharing the personal journeys,
-					passions, and experiences that drive those working in the Earth system sciences. This
-					episode features me as a systems administrator who configures computer systems to
-					enable atmospheric science research.
+					<p>
+						<strong>Portraits of NSF NCAR</strong> — a series highlighting the people behind the
+						science at the National Center for Atmospheric Research, sharing the personal journeys,
+						passions, and experiences that drive those working in the Earth system sciences. This
+						episode features me as a systems administrator who configures computer systems to
+						enable atmospheric science research.
+					</p>
+					<p class="disclaimer">
+						Views and opinions expressed on this site are my own and do not represent an official
+						position of NSF NCAR or UCAR.
+					</p>
 				</figcaption>
 			</figure>
 			<p>
@@ -93,6 +99,16 @@ import { SITE_TITLE, SITE_DESCRIPTION, LINKS } from '../consts';
 				text-align: left;
 				font-size: 0.9em;
 				color: rgb(var(--gray));
+			}
+			.video-feature figcaption p {
+				margin: 0;
+			}
+			.video-feature figcaption p + p {
+				margin-top: 0.5em;
+			}
+			.video-feature figcaption .disclaimer {
+				font-style: italic;
+				font-size: 0.85em;
 			}
 			.linktree p {
 				text-align: left;
