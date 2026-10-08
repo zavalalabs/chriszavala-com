@@ -13,6 +13,26 @@ import { SITE_TITLE, SITE_DESCRIPTION, LINKS } from '../consts';
 		<main class="linktree">
 			<h1>{SITE_TITLE}</h1>
 			<p class="tagline">Practical experience. <em>Direct</em> advice.</p>
+			<figure class="video-feature">
+				<div class="video-embed">
+					<iframe
+						src="https://www.youtube-nocookie.com/embed/a6Wgp-cEmOo"
+						title="Portraits of NSF NCAR: Chris Zavala"
+						loading="lazy"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
+				<figcaption>
+					<strong>Portraits of NSF NCAR</strong> — a series highlighting the people behind the
+					science at the National Center for Atmospheric Research, sharing the personal journeys,
+					passions, and experiences that drive those working in the Earth system sciences. This
+					episode features me as a systems administrator who configures computer systems to
+					enable atmospheric science research.
+				</figcaption>
+			</figure>
 			<p>
 				I'm Chris Zavala — an IT professional based in Colorado with over a decade of hands-on
 				experience across infrastructure, workplace technology, and organizational IT strategy.
@@ -51,6 +71,30 @@ import { SITE_TITLE, SITE_DESCRIPTION, LINKS } from '../consts';
 			.linktree .tagline {
 				color: rgb(var(--gray));
 				margin-bottom: 1.5em;
+			}
+			.video-feature {
+				margin: 0 0 1.5em;
+			}
+			.video-embed {
+				position: relative;
+				width: 100%;
+				aspect-ratio: 16 / 9;
+				border-radius: 12px;
+				overflow: hidden;
+				background: rgb(var(--gray-light));
+			}
+			.video-embed iframe {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+			.video-feature figcaption {
+				margin-top: 0.75em;
+				text-align: left;
+				font-size: 0.9em;
+				color: rgb(var(--gray));
 			}
 			.linktree p {
 				text-align: left;
